@@ -1,0 +1,97 @@
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-weight: 37.5rem;
+  font-size: 3rem;
+}
+h5 {
+  color: #009F3C;
+}
+header p {
+  color: #e0e0e0;
+  font-weight: 18.75rem;
+  line-height: 1.5rem;
+}
+
+
+.text-color {
+  color: #009F3C;
+}
+
+
+
+.hr-style {
+  background-color: transparent;
+  border: 0;
+  border-top: 3px solid #009F3C;
+  display: block;
+  height: 0;
+  margin: 1rem auto 1rem;
+  text-align: center;
+  width: 10%;
+}
+
+
+.bg-color {
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  background-image: url("./../images/burger.jpg");
+}
+
+.btn-color {
+  background: #009F3C;
+  background-image: -webkit-linear-gradient(top, #009F3C, #009F3C);
+  background-image: -moz-linear-gradient(top, #009F3C, #009F3C);
+  background-image: -ms-linear-gradient(top, #009F3C, #009F3C);
+  background-image: -o-linear-gradient(top, #009F3C, #009F3C);
+  background-image: linear-gradient(to bottom, #009F3C, #009F3C);
+}
+
+.background {
+  background-image: url("./../images/background.jpg");
+}
+
+
+
+.footer-link {
+  color: #161616;
+  font-family: "Montserrat", sans-serif;
+  margin: 10px;
+  text-decoration: none;
+}
+.footer-link:hover {
+  color: #d83a56;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.bg-cox {
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  background-image: url("./../images/cover.jpg");
+}
+
+
+
+.bg-success {
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  background-image: url("./../images/success.jpg");
+}

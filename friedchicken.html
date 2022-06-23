@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+  <title>Food Lab</title>
+
+  </head>
+  <body>
+    
+    <header class="bg-cox">
+      <nav class="container navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">Food <span class="text-color">Lab</span> </a>
+      </nav>
+
+
+      <section class="container py-5 my-5">
+        <div class="row justify-content-between">
+          <div class="col-lg-6 d-flex align-items-center">
+            <div class="info">
+              <p>
+              </p>
+              <h1 class="text-white" style="margin-top: 30px;font-family:Brush Script MT; font-size:120px; text-align:center;">Fried Chicken</h1>
+              <p>
+              </p>
+           
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      
+
+      <section class="container py-5">
+        <h1 class="text-center mb-5">
+          Best Fried Chicken <span class="text-color">In Town</span>
+        </h1>
+        <div class="row justify-content-start">
+          <div class="col-lg-6">
+            <img src="./images/chicken1.jpg" class="img-fluid" alt="" />
+          </div>
+
+          <div class="col-lg-5">
+            <p style="font-size:30px; text-align:center;" ><br>
+                
+                Looking for the best-fried chicken in town? Look no further. We serve the crispiest and juiciest fried chicken that is surely going to satisfy your craving.Our own home delivery service is available from Khilgaon and Mirpur areas. 
+
+            </p>
+          </div>
+         
+        </div>
+      </section>
+
+
+
+
+    <script type="text/javascript"> 
+
+        function validation(){ 
+  
+         var uname = document.form.name.value; 
+         
+   
+         if (uname=="") { 
+          alert ("Name should not be blank ...Please submit again"); 
+            return; 
+  
+         } 
+   
+         var str = uname.slice(0,1); 
+         if(uname.slice(0,1)=="_"||uname.slice(0,1)=="@"||str.match(/[0-9]/g)!=null) 
+         { 
+          alert("Name should not start with _,@and Number... Please submit again") 
+          return; 
+         } 
+        } 
+   
+   </script> 
+  
+      
+
+      <section class="container my-5">
+          <h1 class="text-center">Order <span class="text-color">Fried Chicken</span> </h1>
+         
+
+          <div class="right-details-form padding-bottom">
+            <h3><span>Cost </span>800tk.</h3>
+            <br>
+
+            
+            <form action="insert.php" name="form" method="POST" onsubmit="return validation()">
+            <!-- {{ csrf_field() }} -->
+            <div class="col-md-">
+            <div class="select-item-adults-kids">
+            <div class="col-md-6">                                                  
+            <h4>Fried Chicken </h4>
+            </div>
+             <div class="col-md-10"> 
+                    <select name="item" id="item">
+                    <option value="">Select Fried Chicken</option>                 
+                    <option value="Chicken schnitzel">Chicken schnitzel</option>                  
+                    <option value="Korean fried chicken">Korean fried chicken</option>                 
+                    <option value="Chicken schnitzel">Chicken schnitzel</option>
+                    </select>
+        </div>
+
+        <br>
+
+
+        </div>
+            </div>
+                 <input type="text" placeholder="Name" name="name" id="name">
+                 <input type="email" placeholder="Email" name="email" id="email">
+
+        <br>
+        <br>
+            <div class="row">
+                <div class="col-md-6"id="size">
+                    <div class="select-item-adults-kids">
+                        <h4>Size </h4>
+                        <select name="size" id="size">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>   
+                        </select>												
+                           
+                </div>
+            </div>
+                   
+
+            <div class="col-md-6"> 
+                <div class="select-item-adults-kids">
+                        <h4>Quantity </h4>
+                        <select name="quantity" id="quantity">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                </div>
+            </div>
+
+        <br>
+        <br>
+
+        <br>
+        <br>
+
+
+            </div>
+                <input type="text" placeholder="Phone" name="phone" id="phone">
+                <input type="text" placeholder="Date Book" name="date" id="date">
+            
+            
+        <br>
+        <br>
+
+                
+        <textarea name="address"  cols="30" rows="10" placeholder="address" id="address"></textarea>
+
+        <br>
+        <br>
+
+        
+        <button type="submit" class="pink-btn">Order</button>
+            
+    </form>
+    </div>
+        
+
+    </section>
+    </main>
+
+    <footer class="bg-dark mb-0 py-5">
+        <section class="buttom-container  text-center">
+            <h1 class="text-white">Food<span class="text-color"> Lab</span> </h1>
+              
+                <p class="copyright text-white py-2">@2022 Team Innovator</p>
+          </section>
+    </footer>
+
+  </body>
+</html>
